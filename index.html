@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DM Nutrition Centre</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header">
+    <nav class="container nav">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.jpg" alt="DM Nutrition Logo" style="height: 2.5rem; width: auto; border-radius: 0.5rem; object-fit: contain;">
+        <span class="font-display font-bold text-lg">DM Nutrition</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#schedule" class="nav-link">Timing</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-primary nav-btn">
+        Book Consultation
+      </a>
+      
+      <button class="menu-btn" aria-label="Menu">
+        <i data-lucide="menu" class="menu-icon"></i>
+        <i data-lucide="x" class="close-icon" style="display: none;"></i>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#schedule" class="nav-link">Timing</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 0.5rem;">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-blur hero-bg-1"></div>
+    <div class="hero-bg-blur hero-bg-2"></div>
+    
+    <div class="container hero-grid">
+      <div class="animate-fade-in">
+        <span class="badge">
+          <i data-lucide="sparkles" style="width: 1rem; height: 1rem;"></i> Trusted Wellness Experts
+        </span>
+        <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+          Transform Your Health with <span class="text-gradient">Expert Nutrition</span> Guidance
+        </h1>
+        <p class="hero-subtitle">
+          Weight Loss <span class="text-primary">•</span> Weight Gain <span class="text-primary">•</span> Kids Nutrition <span class="text-primary">•</span> Healthy Lifestyle
+        </p>
+        <p class="hero-desc">
+          Personalized diet plans rooted in real food, with weekly expert support that helps you build lasting wellness habits.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            Book Consultation
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">
+            Explore Services
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="avatars">
+            <img src="assets/client1.jpg" alt="Happy client" width="40" height="40">
+            <img src="assets/client2.jpg" alt="Happy client" width="40" height="40">
+            <img src="assets/client3.jpg" alt="Happy client" width="40" height="40">
+          </div>
+          <div>
+            <div class="font-bold">500+ Happy Clients</div>
+            <div class="text-sm text-muted-foreground">Real results, real stories</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper animate-scale-in">
+        <div class="hero-image-bg"></div>
+        <img src="assets/hero.jpg" alt="Healthy lifestyle nutrition" class="hero-image">
+        <div class="floating-card">
+          <div class="icon-box">
+            <i data-lucide="heart"></i>
+          </div>
+          <div>
+            <div class="font-bold text-sm">Eat Real Food</div>
+            <div class="text-sm text-muted-foreground">Weekly support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-padding">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <img src="assets/about.jpg" alt="Nutritionist consulting client" loading="lazy" class="about-image">
+        <div class="experience-badge">
+          <div class="text-3xl font-bold">10+</div>
+          <div class="text-sm" style="opacity: 0.9;">Years Experience</div>
+        </div>
+      </div>
+      
+      <div>
+        <span class="section-tag">About Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem; margin-bottom: 1.5rem;">
+          Natural Nutrition for a <span class="text-gradient">Healthier You</span>
+        </h2>
+        <p class="about-text">
+          At DM Nutrition Centre, we believe true wellness begins on your plate. Located in Trichy, we guide families and individuals toward healthier living through real, natural food and personalized care.
+        </p>
+        <p class="about-text-sm">
+          Our approach blends modern nutrition science with sustainable habits — no fad diets, no crash plans. Just honest guidance, weekly check-ins and a community that cheers you on.
+        </p>
+        
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2" class="icon"></i>
+            <span>Improve overall health & energy</span>
+          </div>
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2" class="icon"></i>
+            <span>Natural weight management</span>
+          </div>
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2" class="icon"></i>
+            <span>Personalized diet plans</span>
+          </div>
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2" class="icon"></i>
+            <span>Expert weekly guidance & follow-ups</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-padding bg-muted">
+    <div class="container">
+      <div class="text-center" style="max-width: 42rem; margin: 0 auto 3.5rem;">
+        <span class="section-tag">Our Services</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem;">
+          Programs Built <span class="text-gradient">Around You</span>
+        </h2>
+        <p class="text-muted-foreground" style="margin-top: 1rem;">
+          From weight management to child nutrition — discover the right plan for your goals.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="scale"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Weight Loss / Gain</h3>
+          <p class="text-sm text-muted-foreground">Personalized programs for healthy weight management.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="activity"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">BMI Checkup</h3>
+          <p class="text-sm text-muted-foreground">Know your Body Mass Index with expert insight.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="trending-down"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Fat Loss Program</h3>
+          <p class="text-sm text-muted-foreground">Targeted fat reduction without crash diets.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="target"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">BMR Checkup</h3>
+          <p class="text-sm text-muted-foreground">Understand your basal metabolic rate.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="sparkles"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Metabolic Age</h3>
+          <p class="text-sm text-muted-foreground">Discover your true metabolic age.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="baby"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Child Nutrition</h3>
+          <p class="text-sm text-muted-foreground">Healthy growth plans for your little ones.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="apple"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Nutrition Awareness</h3>
+          <p class="text-sm text-muted-foreground">Learn what fuels a stronger you.</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon"><i data-lucide="heart"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Healthy Lifestyle</h3>
+          <p class="text-sm text-muted-foreground">Sustainable habits for lifelong wellness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="section-padding">
+    <div class="container">
+      <div class="text-center" style="max-width: 42rem; margin: 0 auto 3.5rem;">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem;">
+          Real Benefits, <span class="text-gradient">Real Results</span>
+        </h2>
+      </div>
+      
+      <div class="services-grid">
+        <div class="card feature-card">
+          <div class="feature-icon-wrapper"><i data-lucide="heart" style="width: 1.75rem; height: 1.75rem;"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Better Health</h3>
+          <p class="text-sm text-muted-foreground">Boost energy, immunity and overall wellbeing.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon-wrapper"><i data-lucide="scale" style="width: 1.75rem; height: 1.75rem;"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Natural Weight</h3>
+          <p class="text-sm text-muted-foreground">Manage weight without harmful shortcuts.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon-wrapper"><i data-lucide="target" style="width: 1.75rem; height: 1.75rem;"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Personalized</h3>
+          <p class="text-sm text-muted-foreground">Plans tailored to your body and lifestyle.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon-wrapper"><i data-lucide="sparkles" style="width: 1.75rem; height: 1.75rem;"></i></div>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Expert Support</h3>
+          <p class="text-sm text-muted-foreground">Weekly guidance from certified experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="section-padding bg-gradient-hero">
+    <div class="container-md">
+      <div class="text-center" style="margin-bottom: 3rem;">
+        <span class="section-tag">Visit Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem;">
+          Consultation <span class="text-gradient">Hours</span>
+        </h2>
+      </div>
+      
+      <div class="schedule-grid">
+        <div class="schedule-card" style="border-radius: 1rem;">
+          <div class="schedule-icon"><i data-lucide="sun" style="width: 2rem; height: 2rem;"></i></div>
+          <h3 class="font-bold text-xl" style="margin-bottom: 0.25rem;">Morning</h3>
+          <p class="text-muted-foreground">7:00 AM – 10:30 AM</p>
+        </div>
+        <div class="schedule-card" style="border-radius: 1rem;">
+          <div class="schedule-icon"><i data-lucide="sunset" style="width: 2rem; height: 2rem;"></i></div>
+          <h3 class="font-bold text-xl" style="margin-bottom: 0.25rem;">Afternoon</h3>
+          <p class="text-muted-foreground">1:00 PM – 3:00 PM</p>
+        </div>
+        <div class="schedule-card" style="border-radius: 1rem;">
+          <div class="schedule-icon"><i data-lucide="moon" style="width: 2rem; height: 2rem;"></i></div>
+          <h3 class="font-bold text-xl" style="margin-bottom: 0.25rem;">Evening</h3>
+          <p class="text-muted-foreground">6:00 PM – 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section-padding">
+    <div class="container">
+      <div class="text-center" style="max-width: 42rem; margin: 0 auto 3.5rem;">
+        <span class="section-tag">Success Stories</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem;">
+          Lives <span class="text-gradient">Transformed</span>
+        </h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="card testimonial-card">
+          <i data-lucide="quote" class="quote-icon" style="width: 2rem; height: 2rem;"></i>
+          <p style="margin-bottom: 1.5rem; font-style: italic; opacity: 0.8;">"DM Nutrition Centre changed my life. The personalized plan was easy to follow and the weekly support kept me motivated."</p>
+          <div class="testimonial-user">
+            <img src="assets/client1.jpg" alt="Priya R." loading="lazy">
+            <div>
+              <div class="font-bold">Priya R.</div>
+              <div class="text-sm text-primary">Lost 12 kg in 5 months</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card testimonial-card">
+          <i data-lucide="quote" class="quote-icon" style="width: 2rem; height: 2rem;"></i>
+          <p style="margin-bottom: 1.5rem; font-style: italic; opacity: 0.8;">"I struggled to gain weight for years. With their guidance, I built lean muscle naturally and feel stronger every day."</p>
+          <div class="testimonial-user">
+            <img src="assets/client2.jpg" alt="Karthik S." loading="lazy">
+            <div>
+              <div class="font-bold">Karthik S.</div>
+              <div class="text-sm text-primary">Gained healthy muscle</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card testimonial-card">
+          <i data-lucide="quote" class="quote-icon" style="width: 2rem; height: 2rem;"></i>
+          <p style="margin-bottom: 1.5rem; font-style: italic; opacity: 0.8;">"My kids love the meal plans! They are healthier, more active and rarely fall sick now. Highly recommended."</p>
+          <div class="testimonial-user">
+            <img src="assets/client3.jpg" alt="Anitha M." loading="lazy">
+            <div>
+              <div class="font-bold">Anitha M.</div>
+              <div class="text-sm text-primary">Mother of two</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding bg-muted">
+    <div class="container-lg">
+      <div class="text-center" style="margin-bottom: 3.5rem;">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="margin-top: 0.75rem;">
+          Start Your <span class="text-gradient">Wellness Journey</span>
+        </h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <i data-lucide="phone" class="text-primary" style="width: 2rem; height: 2rem; margin-bottom: 1rem;"></i>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Call Us</h3>
+          <a href="tel:8675882830" style="display: block; opacity: 0.8; margin-bottom: 0.25rem;">8675882830</a>
+          <a href="tel:8124557124" style="display: block; opacity: 0.8;">8124557124</a>
+        </div>
+        
+        <div class="card contact-card">
+          <i data-lucide="map-pin" class="text-primary" style="width: 2rem; height: 2rem; margin-bottom: 1rem;"></i>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Visit Us</h3>
+          <p style="opacity: 0.8;">Trichy Rottu Theru,<br>Opposite Inpa Mariamman Temple,<br>Udaiyarpalayam.</p>
+        </div>
+        
+        <div class="card contact-card">
+          <i data-lucide="clock" class="text-primary" style="width: 2rem; height: 2rem; margin-bottom: 1rem;"></i>
+          <h3 class="font-bold text-lg" style="margin-bottom: 0.5rem;">Open Hours</h3>
+          <p style="opacity: 0.8; font-size: 0.875rem;">Mon – Sat<br>Morning, Afternoon & Evening</p>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 2.5rem;">
+        <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" style="gap: 0.5rem;">
+          <i data-lucide="message-circle" style="width: 1.25rem; height: 1.25rem;"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+          <img src="assets/logo.jpg" alt="DM Nutrition Logo" style="height: 2.5rem; width: auto; border-radius: 0.5rem; object-fit: contain;">
+          <span class="font-display font-bold text-lg" style="color: white;">DM Nutrition Centre</span>
+        </div>
+        <p style="opacity: 0.7; max-width: 28rem; margin-bottom: 1rem; font-style: italic;">
+          "Eat Real Food with Weekly Support & Guidance"
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook" style="width: 1.25rem; height: 1.25rem;"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram" style="width: 1.25rem; height: 1.25rem;"></i></a>
+          <a href="#" class="social-link" aria-label="Youtube"><i data-lucide="youtube" style="width: 1.25rem; height: 1.25rem;"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="font-bold" style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+        <ul class="footer-links" style="font-size: 0.875rem; opacity: 0.7;">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#schedule">Timing</a></li>
+          <li><a href="#testimonials">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold" style="color: white; margin-bottom: 1rem;">Contact</h4>
+        <ul style="font-size: 0.875rem; opacity: 0.7; list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;">8675882830</li>
+          <li style="margin-bottom: 0.5rem;">8124557124</li>
+          <li>Trichy Rottu Theru,<br>Opposite Inpa Mariamman Temple,<br>Udaiyarpalayam.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        © <span id="year"></span> DM Nutrition Centre. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." 
+     target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="floating-whatsapp">
+    <i data-lucide="message-circle" style="width: 1.75rem; height: 1.75rem;"></i>
+  </a>
+
+  <!-- Script for year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
