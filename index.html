@@ -16,6 +16,55 @@
   
   <!-- Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Lightbox Styles -->
+  <style>
+    #lightbox-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      cursor: zoom-out;
+      animation: lb-fade-in 0.2s ease;
+    }
+    #lightbox-overlay.active { display: flex; }
+    #lightbox-overlay img {
+      max-width: 95vw;
+      max-height: 92vh;
+      border-radius: 0.75rem;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+      object-fit: contain;
+      cursor: default;
+      animation: lb-zoom-in 0.25s ease;
+    }
+    #lightbox-close {
+      position: fixed;
+      top: 1rem;
+      right: 1.25rem;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      z-index: 10000;
+    }
+    #lightbox-close:hover { background: rgba(255,255,255,0.3); }
+    @keyframes lb-fade-in { from { opacity:0; } to { opacity:1; } }
+    @keyframes lb-zoom-in { from { transform: scale(0.92); opacity:0; } to { transform: scale(1); opacity:1; } }
+    .lb-trigger { cursor: zoom-in; display: block; }
+  </style>
 </head>
 <body>
 
@@ -597,49 +646,49 @@
       
       <!-- Visual Transformations Gallery -->
       <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform1.jpg" alt="Client Transformation 1" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform2.jpg" alt="Client Transformation 2" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform3.jpg" alt="Client Transformation 3" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform4.jpg" alt="Client Transformation 4" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform5.jpg" alt="Client Transformation 5" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform6.jpg" alt="Client Transformation 6" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform7.jpg" alt="Client Transformation 7" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform8.jpg" alt="Client Transformation 8" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform9.jpg" alt="Client Transformation 9" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform10.jpg" alt="Client Transformation 10" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform11.jpg" alt="Client Transformation 11" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform12.jpg" alt="Client Transformation 12" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform13.jpg" alt="Client Transformation 13" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform14.jpg" alt="Client Transformation 14" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft);">
           <img src="assets/transform15.jpg" alt="Client Transformation 15" loading="lazy" style="width: 100%; height: auto; display: block;">
         </div>
       </div>
@@ -762,6 +811,12 @@
     </div>
   </footer>
 
+  <!-- Lightbox Modal -->
+  <div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Full size image">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Full size transformation">
+  </div>
+
   <!-- Floating WhatsApp -->
   <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." 
      target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="floating-whatsapp">
@@ -773,5 +828,39 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
   <script src="js/script.js"></script>
+
+  <!-- Lightbox Script -->
+  <script>
+    (function() {
+      const overlay = document.getElementById('lightbox-overlay');
+      const lbImg   = document.getElementById('lightbox-img');
+      const lbClose = document.getElementById('lightbox-close');
+
+      // Attach lightbox to all transformation images
+      document.querySelectorAll('.lb-trigger img').forEach(function(img) {
+        img.parentElement.addEventListener('click', function(e) {
+          e.preventDefault();
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeLightbox() {
+        overlay.classList.remove('active');
+        lbImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      lbClose.addEventListener('click', closeLightbox);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
 </body>
 </html>
