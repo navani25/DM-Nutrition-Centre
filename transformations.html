@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Stories - DM Nutrition Centre</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Lightbox Styles -->
+  <style>
+    #lightbox-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      cursor: zoom-out;
+      animation: lb-fade-in 0.2s ease;
+    }
+    #lightbox-overlay.active { display: flex; }
+    #lightbox-overlay img {
+      max-width: 95vw;
+      max-height: 92vh;
+      border-radius: 0.75rem;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+      object-fit: contain;
+      cursor: default;
+      animation: lb-zoom-in 0.25s ease;
+    }
+    #lightbox-close {
+      position: fixed;
+      top: 1rem;
+      right: 1.25rem;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      z-index: 10000;
+    }
+    #lightbox-close:hover { background: rgba(255,255,255,0.3); }
+    @keyframes lb-fade-in { from { opacity:0; } to { opacity:1; } }
+    @keyframes lb-zoom-in { from { transform: scale(0.92); opacity:0; } to { transform: scale(1); opacity:1; } }
+    .lb-trigger { cursor: zoom-in; display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header">
+    <nav class="container nav">
+      <a href="index.html#home" class="nav-logo">
+        <img src="assets/logo.jpg" alt="DM Nutrition Logo" style="height: 2.5rem; width: auto; border-radius: 0.5rem; object-fit: contain;">
+        <span class="font-display font-bold text-lg">DM Nutrition Centre</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#herbalife" class="nav-link">Herbalife</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#benefits" class="nav-link">Benefits</a>
+        <a href="index.html#schedule" class="nav-link">Timing</a>
+        <a href="transformations.html" class="nav-link active">Stories</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-primary nav-btn">
+        Book Consultation
+      </a>
+      
+      <button class="menu-btn" aria-label="Menu">
+        <i data-lucide="menu" class="menu-icon"></i>
+        <i data-lucide="x" class="close-icon" style="display: none;"></i>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#herbalife" class="nav-link">Herbalife</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#benefits" class="nav-link">Benefits</a>
+        <a href="index.html#schedule" class="nav-link">Timing</a>
+        <a href="transformations.html" class="nav-link active">Stories</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/918675882830?text=Hi%20DM%20Nutrition%20Centre%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 0.5rem;">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRANSFORMATION GALLERY PAGE -->
+  <section id="testimonials" class="section-padding" style="padding-top: 8rem;">
+    <div class="container">
+      <div class="text-center" style="max-width: 42rem; margin: 0 auto 3.5rem;">
+        <span class="section-tag">Lives Transformed</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold" style="margin-top: 0.75rem;">
+          Our Success <span class="text-gradient">Stories</span>
+        </h1>
+        <p class="text-muted-foreground" style="margin-top: 1rem; font-size: 1.125rem;">
+          See the incredible journeys of our 33+ clients who have transformed their lives with Herbalife and our expert guidance.
+        </p>
+      </div>
+      
+      <!-- Visual Transformations Gallery (All 33) -->
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <!-- Images transform1 to transform33 -->
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform1.jpg" alt="Transformation 1" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform2.jpg" alt="Transformation 2" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform3.jpg" alt="Transformation 3" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform4.jpg" alt="Transformation 4" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform5.jpg" alt="Transformation 5" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform6.jpg" alt="Transformation 6" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform7.jpg" alt="Transformation 7" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform8.jpg" alt="Transformation 8" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform9.jpg" alt="Transformation 9" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform10.jpg" alt="Transformation 10" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform11.jpg" alt="Transformation 11" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform12.jpg" alt="Transformation 12" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform13.jpg" alt="Transformation 13" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform14.jpg" alt="Transformation 14" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform15.jpg" alt="Transformation 15" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform16.jpg" alt="Transformation 16" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform17.jpg" alt="Transformation 17" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform18.jpg" alt="Transformation 18" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform19.jpg" alt="Transformation 19" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform20.jpg" alt="Transformation 20" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform21.jpg" alt="Transformation 21" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform22.jpg" alt="Transformation 22" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform23.jpg" alt="Transformation 23" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform24.jpg" alt="Transformation 24" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform25.jpg" alt="Transformation 25" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform26.jpg" alt="Transformation 26" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform27.jpg" alt="Transformation 27" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform28.jpg" alt="Transformation 28" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform29.jpg" alt="Transformation 29" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform30.jpg" alt="Transformation 30" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform31.jpg" alt="Transformation 31" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform32.jpg" alt="Transformation 32" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div class="lb-trigger" style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #f8f8f8;">
+          <img src="assets/transform33.jpg" alt="Transformation 33" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+
+      <!-- Transformation Videos -->
+      <div class="text-center" style="max-width: 42rem; margin: 5rem auto 3rem;">
+        <span class="section-tag">Watch Their Journey</span>
+        <h2 class="text-3xl sm:text-4xl font-bold" style="margin-top: 0.5rem;">Success <span class="text-gradient">Videos</span></h2>
+        <p class="text-muted-foreground" style="margin-top: 1rem;">Real people sharing their genuine experiences and results.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #000;">
+          <video controls preload="metadata" style="width: 100%; height: 540px; object-fit: cover; display: block;">
+            <source src="assets/video1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #000;">
+          <video controls preload="metadata" style="width: 100%; height: 540px; object-fit: cover; display: block;">
+            <source src="assets/video2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #000;">
+          <video controls preload="metadata" style="width: 100%; height: 540px; object-fit: cover; display: block;">
+            <source src="assets/video3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #000;">
+          <video controls preload="metadata" style="width: 100%; height: 540px; object-fit: cover; display: block;">
+            <source src="assets/review1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-soft); background: #000;">
+          <video controls preload="metadata" style="width: 100%; height: 540px; object-fit: cover; display: block;">
+            <source src="assets/review2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-muted">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold" style="margin-bottom: 1.5rem;">Ready to Start Your Own Story?</h2>
+      <a href="https://wa.me/918675882830?text=Hi%2C%20I%20saw%20the%20success%20stories%20and%20I%27d%20like%20to%20start%20my%20own%20transformation." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        Start My Transformation
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER (Same as index.html) -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+          <img src="assets/logo.jpg" alt="DM Nutrition Logo" style="height: 2.5rem; width: auto; border-radius: 0.5rem; object-fit: contain;">
+          <span class="font-display font-bold text-lg" style="color: white;">DM Nutrition Centre</span>
+        </div>
+        <p style="opacity: 0.7; max-width: 28rem; margin-bottom: 1rem; font-style: italic;">
+          "Eat Real Food with Weekly Support & Guidance"
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/19s4a5U3Mo/" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/reel/DXwBnwxx3N9/?igsh=MjMyb2tmZTl5ZDli" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="http://www.youtube.com/@dmcouple3427" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold" style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+        <ul class="footer-links" style="font-size: 0.875rem; opacity: 0.7;">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#herbalife">Herbalife</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#benefits">Benefits</a></li>
+          <li><a href="index.html#schedule">Timing</a></li>
+          <li><a href="transformations.html">Stories</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold" style="color: white; margin-bottom: 1rem;">Contact</h4>
+        <ul style="font-size: 0.875rem; opacity: 0.7; list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;">8675882830</li>
+          <li style="margin-bottom: 0.5rem;">8124557124</li>
+          <li style="margin-bottom: 0.5rem;"><a href="mailto:dharmaraj.kd007@gmail.com">dharmaraj.kd007@gmail.com</a></li>
+          <li>Trichy Road Street (Opposite Inpa Mariamman Temple),<br>Udaiyarpalayam.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© <span id="year"></span> DM Nutrition Centre. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Full size image">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Full size transformation">
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+    
+    // Lightbox Logic
+    (function() {
+      const overlay = document.getElementById('lightbox-overlay');
+      const lbImg   = document.getElementById('lightbox-img');
+      const lbClose = document.getElementById('lightbox-close');
+
+      document.querySelectorAll('.lb-trigger img').forEach(function(img) {
+        img.parentElement.addEventListener('click', function(e) {
+          e.preventDefault();
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeLightbox() {
+        overlay.classList.remove('active');
+        lbImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      lbClose.addEventListener('click', closeLightbox);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    })();
+
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      const isOpen = mobileMenu.classList.contains('active');
+      menuIcon.style.display = isOpen ? 'none' : 'block';
+      closeIcon.style.display = isOpen ? 'block' : 'none';
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+  </script>
+</body>
+</html>
