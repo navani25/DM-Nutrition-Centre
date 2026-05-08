@@ -584,6 +584,10 @@ button {
 .social-link:hover {
   background-color: var(--primary);
 }
+.social-link i {
+  color: white;
+  display: block;
+}
 .footer-links li {
   margin-bottom: 0.5rem;
   list-style: none;
